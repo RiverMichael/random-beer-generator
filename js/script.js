@@ -7,6 +7,9 @@ const loadNewButton = document.querySelector("button");
 
 loadNewButton.addEventListener("click", loadNewBeer);
 
+/**
+ * Fetches the list of beers and displays a random beer
+ */
 async function generateRandomBeer() {
   try {
     const beers = await getBeers();
@@ -24,6 +27,9 @@ async function generateRandomBeer() {
 }
 generateRandomBeer();
 
+/**
+ * Clears the page and loads a new beer
+ */
 function loadNewBeer() {
   clearHtml(beerContainer);
   generateRandomBeer();

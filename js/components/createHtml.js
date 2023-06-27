@@ -1,7 +1,20 @@
+/**
+ * Clears the HTML of an element
+ * @param {*} parentElement The element to clear
+ * @example
+ * const container = documentquerySelector(".container");
+ *
+ * clearHtml(container);
+ */
 export function clearHtml(parentElement) {
   parentElement.innerHTML = "";
 }
 
+/**
+ * Creates the HTML for a beer and appends it to an element
+ * @param {*} beer The beer to create HTML for
+ * @param {*} parentElement The element to append the HTMl to
+ */
 export function createFeaturedBeerHtml(beer, parentElement) {
   const container = document.createElement("div");
   container.classList.add("featured-beer", "card", "p-4", "rounded-5", "shadow", "border-0", "container", "d-flex", "flex-column", "justify-content-center", "align-items-center");
