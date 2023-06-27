@@ -4,7 +4,7 @@
 <br />
 <div align="center">
 
-<h3>Brewdog Random Beer Generator</h3>
+<h3>Random Brewdog Beer Generator</h3>
 <p>A website that generates a random Brewdog beer using the public Punk Beer API</p>
 
 <a href="https://beer-generator.michaelriver.dev">View live site</a> - <a href="https://github.com/RiverMichael/random-beer-generator.git"> Link to project</a>
@@ -43,7 +43,7 @@
 
 ### Description
 
-A project that generates a random beer using the public [Punk Beer API](https://punkapi.com/).
+A project that generates a random brewdog beer using the public [Punk Beer API](https://punkapi.com/).
 
 For the deployment of the website I'm using [Vercel](https://www.vercel.com).
 
