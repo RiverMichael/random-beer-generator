@@ -11,7 +11,7 @@
  */
 export function createMessage(parentElement, messageType, messageText) {
   const message = document.createElement("div");
-  message.classList.add(...messageType, "border", "border-2", "p-4", "text-center");
+  message.classList.add(...messageType, "border", "border-3", "rounded", "p-4", "fw-bold", "text-center");
   message.innerText = messageText;
 
   parentElement.append(message);

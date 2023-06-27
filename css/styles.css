@@ -3,7 +3,7 @@
   height: 58px;
   border-radius: 50%;
   display: inline-block;
-  border-top: 5px solid var(--bs-success);
+  border-top: 5px solid var(--bs-dark);
   border-right: 5px solid transparent;
   box-sizing: border-box;
   animation: rotation 1s linear infinite;

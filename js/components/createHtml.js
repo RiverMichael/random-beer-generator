@@ -4,7 +4,7 @@ export function clearHtml(parentElement) {
 
 export function createFeaturedBeerHtml(beer, parentElement) {
   const container = document.createElement("div");
-  container.classList.add("featured-beer", "card", "p-4", "rounded", "shadow", "border-0", "container", "d-flex", "flex-column", "justify-content-center", "align-items-center");
+  container.classList.add("featured-beer", "card", "p-4", "rounded-5", "shadow", "border-0", "container", "d-flex", "flex-column", "justify-content-center", "align-items-center");
   container.id = beer.id;
 
   const title = document.createElement("h2");
@@ -34,11 +34,11 @@ export function createFeaturedBeerHtml(beer, parentElement) {
   container.append(description);
 
   const detailsList = document.createElement("ul");
-  detailsList.classList.add("list-group", "list-group-flush", "mb-4");
+  detailsList.classList.add("list-group", "list-group-flush", "rounded", "mb-4");
   container.append(detailsList);
 
   const abv = document.createElement("li");
-  abv.classList.add("list-group-item", "fw-bold");
+  abv.classList.add("list-group-item", "bg-body-secondary", "fw-bold");
   abv.innerText = "Abv: ";
   detailsList.append(abv);
 
@@ -48,7 +48,7 @@ export function createFeaturedBeerHtml(beer, parentElement) {
   abv.append(abvSpan);
 
   const ph = document.createElement("li");
-  ph.classList.add("list-group-item", "fw-bold");
+  ph.classList.add("list-group-item", "bg-body-secondary", "fw-bold");
   ph.innerText = "PH: ";
   detailsList.append(ph);
 
@@ -58,7 +58,7 @@ export function createFeaturedBeerHtml(beer, parentElement) {
   ph.append(phSpan);
 
   const hops = document.createElement("li");
-  hops.classList.add("list-group-item", "fw-bold");
+  hops.classList.add("list-group-item", "bg-body-secondary", "fw-bold");
   hops.innerText = "Number of hops: ";
   detailsList.append(hops);
 
@@ -68,7 +68,7 @@ export function createFeaturedBeerHtml(beer, parentElement) {
   hops.append(hopsNumber);
 
   const malts = document.createElement("li");
-  malts.classList.add("list-group-item", "fw-bold");
+  malts.classList.add("list-group-item", "bg-body-secondary", "fw-bold");
   malts.innerText = "Number of malts: ";
   detailsList.append(malts);
 
@@ -78,7 +78,7 @@ export function createFeaturedBeerHtml(beer, parentElement) {
   malts.append(maltsNumber);
 
   const firstBrewed = document.createElement("li");
-  firstBrewed.classList.add("list-group-item", "fw-bold");
+  firstBrewed.classList.add("list-group-item", "bg-body-secondary", "fw-bold");
   firstBrewed.innerText = "First brewed: ";
   detailsList.append(firstBrewed);
 
@@ -88,7 +88,7 @@ export function createFeaturedBeerHtml(beer, parentElement) {
   firstBrewed.append(firstBrewedSpan);
 
   const foodPairing = document.createElement("li");
-  foodPairing.classList.add("list-group-item", "fw-bold");
+  foodPairing.classList.add("list-group-item", "bg-body-secondary", "fw-bold");
   foodPairing.innerText = "Works well with: ";
   detailsList.append(foodPairing);
 
