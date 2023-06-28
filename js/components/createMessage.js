@@ -3,7 +3,6 @@
  * @param {*} parentElement The element to append the message to
  * @param {Array} messageType The classlists of the message
  * @param {string} messageText The text message to display
- * @returns Displays a message
  * @example
  * const container = documentquerySelector(".container");
  *
